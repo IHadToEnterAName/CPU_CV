@@ -68,7 +68,7 @@ python yolo_tracker.py -m best.onnx -s video.mp4
 
 **OpenVINO (folder):**
 ```
-python yolo_tracker.py -m best_openvino_model -s video.mp4
+python yolo_tracker.py -m best_openvino_model_folder -s video.mp4
 ```
 
 ### Detection Settings
