@@ -181,7 +181,8 @@ class VideoStream:
     """Threaded capture for live streams, sequential for local files."""
 
     def __init__(self, source):
-        self.cap = cv2.VideoCapture(source, cv2.CAP_FFMPEG)
+        backend = cv2.CAP_DSHOW if isinstance(source, int) and sys.platform == 'win32' else cv2.CAP_FFMPEG
+        self.cap = cv2.VideoCapture(source, backend)
         if not self.cap.isOpened():
             raise RuntimeError(f"Cannot open video source: {source}")
 
