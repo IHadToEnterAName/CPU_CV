@@ -77,6 +77,79 @@ Run all cells in `training_v19.ipynb` sequentially. The pipeline:
 
 Validation split: 20% of data. Background images (no annotations) from BDD100K are included (200 train / 30 val) to reduce false positives.
 
+
+
+# Class Mapping
+
+## 🎯 Final Output Classes
+
+| ID | Class Name    |
+| -- | ------------- |
+| 0  | person        |
+| 1  | vehicle       |
+| 2  | animal        |
+| 3  | traffic_light |
+| 4  | traffic_sign  |
+
+---
+
+## 🧍 Person → `0`
+
+* `person`
+* `rider`
+* `pedestrian`
+
+---
+
+## 🚗 Vehicle → `1`
+
+* `car`
+* `bus`
+* `truck`
+* `motorcycle`
+* `bicycle`
+* `van`
+* `suv`
+* `pickup`
+* `minibus`
+* `minivan`
+* `ambulance`
+* `firetruck`
+* `fire truck`
+
+---
+
+## 🐾 Animal → `2`
+
+* `animal`
+* `dog`
+* `cow`
+* `horse`
+* `cat`
+* `sheep`
+* `deer`
+* `goat`
+* `bird`
+
+---
+
+## 🚦 Traffic Light → `3`
+
+* `traffic light`
+* `go`
+
+---
+
+## 🛑 Traffic Sign → `4`
+
+* `traffic sign`
+* `stop`
+* `warning`
+* `yield`
+* `obs-str-bar-fallback`
+* `billboard`
+
+
 ---
 
 ## 4. Data Augmentation
