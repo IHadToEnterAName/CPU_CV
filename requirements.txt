@@ -1,0 +1,9 @@
+ultralytics
+onnxruntime
+opencv-python
+numpy
+scipy
+filterpy
+yt-dlp
+streamlink
+openvino
