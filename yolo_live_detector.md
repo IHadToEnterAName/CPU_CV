@@ -39,6 +39,23 @@ pip install openvino
 
 ### Basic Commands
 
+**Install video from Youtuve**
+
+```
+yt-dlp -f "best[height<=720]" -o video.mp4 "youtube link"
+
+```
+
+**Stream Youtube Video (dosent always work)**
+
+```
+python yolo_tracker.py -m best.pt -s "Youtube Link"
+
+
+```
+
+
+
 **Webcam (live camera feed):**
 ```
 python yolo_tracker.py -m best.pt -s 0
